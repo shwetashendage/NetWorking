@@ -20,6 +20,9 @@
 		E4BF7DF720D7B8CC00089543 /* NWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DF620D7B8CC00089543 /* NWConstants.swift */; };
 		E4BF7DFA20D7B99200089543 /* NWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DF620D7B8CC00089543 /* NWConstants.swift */; };
 		E4BF7DFB20D7B99300089543 /* NWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DF620D7B8CC00089543 /* NWConstants.swift */; };
+		E4BF7DFD20D7D82800089543 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DFC20D7D82800089543 /* Product.swift */; };
+		E4BF7DFE20D7D82800089543 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DFC20D7D82800089543 /* Product.swift */; };
+		E4BF7DFF20D7D82800089543 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BF7DFC20D7D82800089543 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,7 @@
 		E4BF7DE420D7A7C500089543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4BF7DF020D7B32300089543 /* ServiceClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClass.swift; sourceTree = "<group>"; };
 		E4BF7DF620D7B8CC00089543 /* NWConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWConstants.swift; sourceTree = "<group>"; };
+		E4BF7DFC20D7D82800089543 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E4BF7DC220D7A7C300089543 /* AppDelegate.swift */,
+				E4BF7E0020D7D82E00089543 /* Model */,
 				E4BF7DF420D7B7F700089543 /* Controller */,
 				E4BF7DF520D7B80600089543 /* Networking */,
 				E4BF7DF620D7B8CC00089543 /* NWConstants.swift */,
@@ -149,6 +154,14 @@
 				E4BF7DF020D7B32300089543 /* ServiceClass.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E4BF7E0020D7D82E00089543 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4BF7DFC20D7D82800089543 /* Product.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +297,7 @@
 			files = (
 				E4BF7DC520D7A7C300089543 /* ViewController.swift in Sources */,
 				E4BF7DC320D7A7C300089543 /* AppDelegate.swift in Sources */,
+				E4BF7DFD20D7D82800089543 /* Product.swift in Sources */,
 				E4BF7DF720D7B8CC00089543 /* NWConstants.swift in Sources */,
 				E4BF7DF120D7B32400089543 /* ServiceClass.swift in Sources */,
 			);
@@ -294,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BF7DFA20D7B99200089543 /* NWConstants.swift in Sources */,
+				E4BF7DFE20D7D82800089543 /* Product.swift in Sources */,
 				E4BF7DD820D7A7C400089543 /* NetworkingTests.swift in Sources */,
 				E4BF7DF220D7B32400089543 /* ServiceClass.swift in Sources */,
 			);
@@ -304,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BF7DFB20D7B99300089543 /* NWConstants.swift in Sources */,
+				E4BF7DFF20D7D82800089543 /* Product.swift in Sources */,
 				E4BF7DE320D7A7C400089543 /* NetworkingUITests.swift in Sources */,
 				E4BF7DF320D7B32400089543 /* ServiceClass.swift in Sources */,
 			);

@@ -22,15 +22,58 @@
                                 <rect key="frame" x="169" y="315.5" width="37" height="37"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GC-G4-1bD">
+                                <rect key="frame" x="20" y="84" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-lR-AKN">
+                                <rect key="frame" x="20" y="94" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3P-vv-7vE">
+                                <rect key="frame" x="20" y="104" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flr-TD-BLA">
+                                <rect key="frame" x="20" y="114" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="y3P-vv-7vE" firstAttribute="top" secondItem="FJX-lR-AKN" secondAttribute="bottom" constant="10" id="AWk-i2-ZLP"/>
+                            <constraint firstItem="9GC-G4-1bD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="C4F-eK-TxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9GC-G4-1bD" secondAttribute="trailing" constant="20" id="Dsc-Aw-Kaw"/>
+                            <constraint firstItem="flr-TD-BLA" firstAttribute="trailing" secondItem="y3P-vv-7vE" secondAttribute="trailing" id="LgD-9T-eUE"/>
                             <constraint firstItem="Xki-bO-ht6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TUM-Bv-Boe"/>
+                            <constraint firstItem="y3P-vv-7vE" firstAttribute="trailing" secondItem="FJX-lR-AKN" secondAttribute="trailing" id="Udz-47-PBh"/>
+                            <constraint firstItem="9GC-G4-1bD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ui5-lk-J8f"/>
+                            <constraint firstItem="flr-TD-BLA" firstAttribute="leading" secondItem="y3P-vv-7vE" secondAttribute="leading" id="fbW-Ib-qyj"/>
+                            <constraint firstItem="FJX-lR-AKN" firstAttribute="trailing" secondItem="9GC-G4-1bD" secondAttribute="trailing" id="hVn-9j-5Yq"/>
                             <constraint firstItem="Xki-bO-ht6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nrA-xq-SZG"/>
+                            <constraint firstItem="flr-TD-BLA" firstAttribute="top" secondItem="y3P-vv-7vE" secondAttribute="bottom" constant="10" id="o0L-u9-dvI"/>
+                            <constraint firstItem="FJX-lR-AKN" firstAttribute="top" secondItem="9GC-G4-1bD" secondAttribute="bottom" constant="10" id="tII-VI-9Bi"/>
+                            <constraint firstItem="FJX-lR-AKN" firstAttribute="leading" secondItem="9GC-G4-1bD" secondAttribute="leading" id="u1W-3k-bwu"/>
+                            <constraint firstItem="y3P-vv-7vE" firstAttribute="leading" secondItem="FJX-lR-AKN" secondAttribute="leading" id="ugb-eg-BJA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="53Q-bI-szp"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Xki-bO-ht6" id="R4k-nm-bEW"/>
+                        <outlet property="name" destination="flr-TD-BLA" id="uqR-aR-ELt"/>
+                        <outlet property="productId" destination="9GC-G4-1bD" id="zrY-vI-PCb"/>
+                        <outlet property="serviceCategory" destination="FJX-lR-AKN" id="xfC-CL-BDS"/>
+                        <outlet property="serviceType" destination="y3P-vv-7vE" id="Sug-Q9-Lt7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

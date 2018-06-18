@@ -10,16 +10,14 @@ import Foundation
 
 class ServiceClass {
   
-  
-  
   typealias JSONDictionary = [String: Any]
-  typealias result = (JSONDictionary?, String) -> ()
+  typealias result = (ProductWrapper, String) -> ()
   
   var defaultSession = URLSession(configuration: .default)
   var dataTask: URLSessionDataTask?
   
   var errorMessage = ""
-  var dataDictinary: JSONDictionary = [:]
+  var productWrapper: ProductWrapper?
   
   func getProducts(completion: @escaping result) {
     
@@ -45,14 +43,23 @@ class ServiceClass {
         self.createProductModel(data)
       }
       DispatchQueue.main.async {
-        completion(self.dataDictinary, self.errorMessage)
+        completion(self.productWrapper!, self.errorMessage)
       }
     }
     
     dataTask?.resume()
     
   }
+  
   func createProductModel(_ data: Data) {
+    do {
+      let decoder = JSONDecoder()
+      productWrapper = try decoder.decode(ProductWrapper.self, from: data)
+      print(productWrapper?.product.productid)
+     
+    } catch let jsonErr {
+      print("Failed to decode:", jsonErr)
+    }
     
   }
   
