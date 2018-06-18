@@ -11,11 +11,5 @@ import Foundation
 struct NWConstants {
   
   static let NWProductServiceURL = "https://api.prd.telenet.be/omapi/public/product/544"
-  struct NWKeys {
-    static let product = "product"
-    static let productId = "productid"
-    static let serviceCategory = "service_category"
-    static let serviceType = "servicetype"
-    static let name = "name"
-  }
+
 }

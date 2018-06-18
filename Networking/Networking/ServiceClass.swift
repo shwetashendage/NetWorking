@@ -55,7 +55,6 @@ class ServiceClass {
     do {
       let decoder = JSONDecoder()
       productWrapper = try decoder.decode(ProductWrapper.self, from: data)
-      print(productWrapper?.product.productid)
      
     } catch let jsonErr {
       print("Failed to decode:", jsonErr)
