@@ -26,7 +26,7 @@ class ServiceClass {
     //    Webservice call
     dataTask?.cancel()
     
-    guard let url = URL(string: "https://api.prd.telenet.be/omapi/public/product/544") else {
+    guard let url = URL(string: NWConstants.NWProductServiceURL) else {
       return
     }
     
