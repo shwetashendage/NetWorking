@@ -16,11 +16,15 @@ class ViewController: UIViewController {
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   @IBOutlet weak var productId: UILabel!
   let service = ServiceClass()
+  let defaultLanguage = "nl"
+  var currentLanguage: String!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.title = "Product Info"
-    let language = Locale.preferredLanguages[0]
+    
+    currentLanguage = Bundle.main.preferredLocalizations.first ?? defaultLanguage
+   
     service.getProducts() { productInfo, errorMessage in
       
       self.activityIndicator.stopAnimating()
@@ -36,7 +40,7 @@ class ViewController: UIViewController {
 
         var arrayOfLocalizedContent: [Localizedcontent] = productInfo.product.localizedcontent
         arrayOfLocalizedContent = arrayOfLocalizedContent.filter({
-          $0.locale == language
+          $0.locale == self.currentLanguage
         })
         guard arrayOfLocalizedContent.isEmpty == false else{
           return
