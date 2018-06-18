@@ -9,15 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  let service = ServiceClass()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.title = "Product Info"
+    service.getProducts() { results, errorMessage in
+      
+      
+      if let results = results{
+        
+        
+      } else if errorMessage.isEmpty == false {
+        
+        
+      }
+      
+    }
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
-
-
+  
+  
 }
 
